@@ -82,7 +82,17 @@ int main()
     ans.push_back(54);
     ans.push_back(125);
     // sort in increasing order
-    sort(ans.begin(), ans.end());
-    for(int i = 0; i<ans.size();i++)
-    cout<<ans[i]<<" ";
+    // sort(ans.begin(), ans.end());
+    // for(int i = 0; i<ans.size();i++)
+    // cout<<ans[i]<<" ";
+    // cout<<endl;
+    // // sort in decreasing order
+    // sort(ans.rbegin(), ans.rend());
+    // for(int i=0;i<ans.size();i++)
+    // cout<<ans[i]<<" ";
+
+    // search in binary search
+    cout<<binary_search(ans.begin(), ans.end(), 54)<<endl;
+
+    cout<<find(ans.begin(), ans.end(), 54)-ans.begin()<<endl;
 }
